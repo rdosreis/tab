@@ -301,7 +301,7 @@ tabfreq.svy <- function(formula,
 
   # Add yname row and indent ylevels if requested
   if (yname.row) {
-    spaces <- "&nbsp; &nbsp; &nbsp;"
+    spaces <- "\u00A0\u00A0\u00A0"
     row1 <- df[1, , drop = FALSE]
     df[, 1] <- paste(spaces, df[, 1], sep = "")
     df <- rbind(c(yname, rep("", ncol(df) - 1)), df)
