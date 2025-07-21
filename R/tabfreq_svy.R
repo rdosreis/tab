@@ -218,7 +218,7 @@ tabfreq.svy <- function(formula,
       } else if (parenth == "N") {
         part2 <- rowsums.svycounts
       } else if (parenth == "col.percent") {
-        part2 <- percents
+        part2 <- paste(" (", sprintf(spf, percents), ")", sep = "")
       } else if (parenth == "se") {
         part2 <- ses
       } else if (parenth == "ci") {
